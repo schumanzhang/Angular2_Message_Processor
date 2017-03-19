@@ -1,0 +1,28 @@
+.wish-form {
+    padding: 10px 15px;
+    padding-bottom: 25px;
+}
+
+.description-row {
+    padding-top: 20px;
+    height: 200px;
+}
+
+.display-image {
+    width: 100%;
+    height: auto;
+}
+
+.btn-done {
+    width: 160px;
+}
+
+.birth-row {
+    padding-bottom: 20px;
+}
+
+.description-row-birth {
+    padding-top: 20px;
+    height: 100px;
+}
+

@@ -1,0 +1,36 @@
+.list-group-item-text {
+    margin-bottom: 1;
+    line-height: 3.5;
+}
+
+.list-group {
+    border: 1px solid #ecf0f1;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.list-group-item-heading {
+    margin-top: 5px;
+}
+
+.todoList {
+    margin-top: 8px;
+}
+
+.todoList > li {
+    padding-top: 4px;
+}
+
+a.list-group-item:hover, button.list-group-item:hover, a.list-group-item:focus, button.list-group-item:focus {
+    background-color: #ffffff;
+}
+
+.main-processor {
+    min-height: 900px;
+}
+
+.finish-well {
+    min-height: 100px;
+}

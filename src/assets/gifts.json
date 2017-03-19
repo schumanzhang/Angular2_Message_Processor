@@ -1,0 +1,43 @@
+{
+    "list": "list of available gifts",
+    "gifts": [{
+                "title": "Toy Gun",
+                "description": "A toy gun for a little boy",
+                "imageURL": "http://www.moretoyguns.com/toygun/superb.jpg"
+                },
+                {
+                    "title": "Barbie Doll",
+                    "description": "A cute barbie doll for little girl",
+                    "imageURL": "https://i.ytimg.com/vi/GqZk__hrpgk/maxresdefault.jpg"
+                },
+                {
+                    "title": "Model Plane",
+                    "description": "A model plane to play around for older kids",
+                    "imageURL": "http://i.ebayimg.com/00/s/NTY1WDg1MA==/z/oEcAAOSwd4tTrqPz/$_32.JPG?set_id=880000500F"
+                },
+                {
+                    "title": "Exercise Ball",
+                    "description": "An excercise ball for fitness enthusiasts",
+                    "imageURL": "https://www.peimag.com/wp-content/uploads/2016/07/exercise-balls.jpg"
+                },
+                {
+                    "title": "A Dumbell",
+                    "description": "Pair of dumbells for the gym junkies",
+                    "imageURL": "http://www.ironcompany-fitness-news.com/wp-content/uploads/2014/11/hampton-pro-style-dumbbells.jpg"
+                },
+                {
+                    "title": "Sneakers",
+                    "description": "Nike sneakers for those who run a lot",
+                    "imageURL": "http://media.vocativ.com/photos/2015/01/Big-Money-Sneakers-042945646609.jpg"
+                },
+                {
+                    "title": "Tennis Racket",
+                    "description": "Best tennis rackets for improving Tennis",
+                    "imageURL": "https://image.freepik.com/free-photo/tennis-racquets-and-balls_21064561.jpg"
+                },
+                {
+                    "title": "Video Game",
+                    "description": "A collection of classic video games for the gamers",
+                    "imageURL": "http://az616578.vo.msecnd.net/files/2016/03/31/635950532567329334-2083884688_Video%20Game.png"
+                }]
+}

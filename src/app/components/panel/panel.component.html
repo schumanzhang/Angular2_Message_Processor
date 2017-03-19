@@ -1,0 +1,45 @@
+<div *ngIf="panelType==='Birthday Wish'">
+    <div class="wish-form">
+        <div class="row dropdown-row">
+            <div class="col-xs-5">
+                <ng-select placeholder="Please select a gift" (selected)="onSelected($event)" [options]="giftNameArray"></ng-select>
+            </div>
+        </div>
+        <div *ngIf="selectedDropdown">
+            <div class="row description-row">
+                <div class="col-xs-8">
+                    <p><strong>Title:</strong> {{selectedGift[0].title}}</p>
+                    <p><strong>Description:</strong> {{selectedGift[0].description}}</p>
+                    <p><i>{{panelObject._standardMessage}}</i></p>
+                    <button class="btn btn-success btn-done" (click)="sendMessage()">Send!</button>
+                </div>
+                <div class="col-xs-4">
+                    <img class="img-responsive display-image" [src]="selectedGift[0].imageURL">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="panelType==='Congrats on the birth of your child'">
+    <div class="wish-form">
+        <div class="row birth-row">
+            <div class="col-xs-5">
+                <ng-select placeholder="Choose name of baby" (selected)="onSelected($event)" [options]="babyNames"></ng-select>
+            </div>
+        </div>
+        <div class="row birth-row">
+            <div class="col-xs-5">
+                <my-date-picker placeholder="Choose date of birth" [options]="myDatePickerOptions" (dateChanged)="onDateChanged($event)"></my-date-picker>
+            </div>
+        </div>
+        <div *ngIf="selectedDropdown">
+            <div class="row description-row-birth">
+                <div class="col-xs-12">
+                    <p><i>{{panelObject._standardMessage}}</i></p>
+                    <button class="btn btn-success btn-done" [disabled]="selectedBabyName==='[babyname]' || selectedFormattedDob==='[birthdate]'" (click)="sendMessage()">Send!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

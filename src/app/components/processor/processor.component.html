@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+         <h3> Your next 5 messages </h3>
+         <hr>
+    </div>
+    <div class="row main-processor">
+        <div class="col-sm-7">
+            <div *ngIf="!finishedProcessing">
+            <div class="list-group" *ngFor="let display of displayList; let i=index">
+                <a class="list-group-item" (click)="showDetails(i); $event.stopPropagation();" href="javascript:void(0)">
+                    <h4 class="list-group-item-heading">{{display._name}}</h4>
+                    <p class="list-group-item-text">Type: {{display._messageType}}</p>
+                </a>
+                <div *ngIf="currentMsgType && i === currentItem && !processingMsg">
+                    <panel [panelType]="display._messageType" [panelObject]="display" (notify)="finishMessage($event)"></panel>
+                </div>
+                <div *ngIf="!currentMsgType && i === currentItem && !processingMsg">
+                    <panel [panelType]="display._messageType" [panelObject]="display" (notify)="finishMessage($event)"></panel>
+                </div>
+            </div>  
+            </div>
+            <div *ngIf="finishedProcessing" class="well finish-well">
+                You have completed all of your messages for now!
+            </div>
+        </div>
+        <div class="col-sm-5">
+            <div class="alert alert-dismissible alert-info">
+                <strong>TODO! </strong> You have <a class="alert-link">{{todoList.length}} messages</a> in your todo list.
+                <ul class="todoList">
+                    <li *ngFor="let item of todoList">{{item._name}}</li>
+                </ul>
+            </div>
+            <div class="alert alert-dismissible alert-success">
+                <strong>Yay!</strong> You have processed <a class="alert-link">{{processedList.length}} messages</a>.
+                <ul class="todoList">
+                    <li *ngFor="let item of processedList">{{item._name}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>  
+</div>

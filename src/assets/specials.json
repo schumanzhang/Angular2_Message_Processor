@@ -1,0 +1,13 @@
+{
+    "list": "list of special gifts",
+    "gifts": [{
+                "title": "Special - Lobster Dinner",
+                "description": "A lavish lobster dinner to share with the family",
+                "imageURL": "https://padthaitoo.files.wordpress.com/2012/08/chilled-lobster-dinner.jpg"
+                },
+                {
+                "title": "Special - Diamond Jewellery",
+                "description": "A super special diamond jewellery set for your spouse",
+                "imageURL": "https://s-media-cache-ak0.pinimg.com/originals/0d/34/fb/0d34fbacec5727505f002c34d8961f92.jpg"
+                }]
+}
